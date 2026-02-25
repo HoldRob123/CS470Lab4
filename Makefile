@@ -1,10 +1,13 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
+CFLAGS = -Wall
 
-all: myshell
+all: SJF RR
 
-myshell: myshell.c
-	$(CC) $(CFLAGS) myshell.c -o myshell
+SJF: SJF.c
+	$(CC) $(CFLAGS) SJF.c -o SJF
+
+RR: RR.c
+	$(CC) $(CFLAGS) RR.c -o RR
 
 clean:
-	rm -f myshell
+	rm -f SJF RR
